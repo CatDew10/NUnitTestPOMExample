@@ -12,6 +12,4 @@ public class HomePage(IWebDriver driver)
         customerPortalButton.Click();
         return new CustomerPortalLogin(driver);
     }
-
-
 }

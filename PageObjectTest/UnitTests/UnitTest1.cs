@@ -1,5 +1,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Edge;
+using PageObjectTest.Pages;
 
 namespace PageObjectTest.UnitTests;
 
@@ -22,12 +23,9 @@ public class Tests
         var homePage = new HomePage(driver);
         var loginPage = homePage.ClickCustomerPortal();
         loginPage.ClickLoginButton("Login", "password");
-
-
     }
 
     [TearDown]
-
     public void TearDown()
     {
         driver.Quit();
